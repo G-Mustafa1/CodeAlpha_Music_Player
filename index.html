@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contanir">
+        <div class="top-bar">
+            <i class="material-symbols-outlined">
+                favorite
+            </i>
+            <span>Now Playing</span>
+            <i class="material-symbols-outlined">add</i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-detail">
+            <p class="song-name">Mr Jack hyde</p>
+            <p class="song-artist"> Lil Nas X</p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="song-timer">
+                <span class="current-time">00:00</span>
+                <span class="max-time">00:00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <i id="repeat-plis" class="material-symbols-outlined" title="Playlist looped">repeat</i>
+            <i id="prev" class="material-symbols-outlined prev">skip_previous</i>
+
+            <div class="paly-pause">
+                <i class="material-symbols-outlined">play_arrow</i>
+                <!-- <i class="material-symbols-outlined">pause</i> -->
+            </div>
+
+            <i id="next" class="material-symbols-outlined next">skip_next</i>
+            <i id="more-music" class="material-symbols-outlined">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material-symbols-outlined">queue_music</i>
+                    <span>Music list</span>
+                </div>
+                <i id="close" class="material-symbols-outlined">close</i>
+            </div>
+            <ul>
+                <!-- <li>
+                    <div class="row">
+                        <span>01</span>
+                        <span>Mr Jack hyde</span>
+                    </div>
+                    <span class="audio-duration">3:40</span>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="musicList.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
